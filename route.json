@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "urlPath": "/home",
+      "entryName": "home",
+      "entryPath": "html/home/index.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "home",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    },
+    {
+      "urlPath": "/clasi",
+      "entryName": "clasi",
+      "entryPath": "html/clasi/index.html",
+      "isSPA": true,
+      "isStream": false,
+      "isSSR": false,
+      "redirect": "",
+      "responseHeader": [],
+      "extra": {
+        "entryName": "clasi",
+        "loadableManifest": ""
+      },
+      "isSpa": true,
+      "specialHeader": []
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+version: 1
+web:
+  dir: .
+  runtime: worker
+  isCustomServer: false
+routes:
+  - src: /home/**
+    dest:
+      type: web
+      path: html/home/index.html
+      ssr: false
+      redirect: ""
+      stream: false
+  - src: /clasi/**
+    dest:
+      type: web
+      path: html/clasi/index.html
+      ssr: false
+      redirect: ""
+      stream: false

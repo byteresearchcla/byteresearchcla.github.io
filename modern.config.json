@@ -1,0 +1,251 @@
+{
+  "autoLoadPlugins": false,
+  "source": {
+    "entries": {
+      "home": {
+        "entry": "./src/routes/home/page.tsx"
+      },
+      "clasi": {
+        "entry": "./src/routes/clasi/page.tsx"
+      }
+    },
+    "mainEntryName": "main",
+    "enableAsyncEntry": false,
+    "disableDefaultEntries": true,
+    "entriesDir": "./src",
+    "configDir": "./config",
+    "globalVars": [
+      {
+        "process.env.IS_REACT18": "true"
+      },
+      null
+    ],
+    "alias": {
+      "@_edenx_internal": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.edenx",
+      "@_edenx_src": "/Users/bytedance/Desktop/FE/cla_webpage/src",
+      "@": "/Users/bytedance/Desktop/FE/cla_webpage/src",
+      "@shared": "/Users/bytedance/Desktop/FE/cla_webpage/shared",
+      "@edenx/runtime$": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.edenx/.runtime-exports/index.js",
+      "@modern-js/runtime$": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.pnpm/@modern-js+runtime@2.54.6_35k5ortleyrcvnhkuqsndb4ugu/node_modules/@modern-js/runtime",
+      "@modern-js/runtime/plugins": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.edenx/.runtime-exports/plugins.js",
+      "styled-components": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.pnpm/styled-components@5.3.11_fwoepjtddfcr3qfa5coytauoju/node_modules/styled-components/dist/styled-components.cjs.js",
+      "@modern-js/runtime-utils/node$": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.pnpm/@modern-js+runtime-utils@2.54.6_nnrd3gsncyragczmpvfhocinkq/node_modules/@modern-js/runtime-utils/dist/cjs/node/index.js",
+      "@edenx/runtime/plugins": "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.edenx/.runtime-exports/plugins.js"
+    },
+    "include": [
+      {},
+      {},
+      {},
+      "/Users/bytedance/Desktop/FE/cla_webpage/node_modules/.edenx"
+    ],
+    "transformImport": [
+      {
+        "libraryName": "@arco-design/web-react",
+        "libraryDirectory": "es",
+        "camelToDashComponentName": false,
+        "style": true
+      },
+      {
+        "libraryName": "@arco-design/web-react/icon",
+        "libraryDirectory": "react-icon",
+        "camelToDashComponentName": false
+      }
+    ],
+    "define": {}
+  },
+  "output": {
+    "distPath": {
+      "root": "dist",
+      "html": "html",
+      "js": "static/js",
+      "css": "static/css",
+      "server": "bundles",
+      "worker": "worker"
+    },
+    "cleanDistPath": true,
+    "disableNodePolyfill": true,
+    "enableInlineRouteManifests": true,
+    "disableInlineRouteManifests": false
+  },
+  "server": {
+    "baseUrl": "/",
+    "port": 8080
+  },
+  "dev": {
+    "client": {
+      "protocol": "ws",
+      "host": "127.0.0.1"
+    }
+  },
+  "html": {
+    "title": "",
+    "mountId": "root",
+    "meta": {
+      "charset": {
+        "charset": "utf-8"
+      },
+      "viewport": "width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no",
+      "http-equiv": {
+        "http-equiv": "x-ua-compatible",
+        "content": "ie=edge"
+      },
+      "renderer": "webkit",
+      "layoutmode": "standard",
+      "imagemode": "force",
+      "wap-font-scale": "no",
+      "format-detection": "telephone=no"
+    }
+  },
+  "tools": {
+    "tsChecker": {
+      "issue": {
+        "exclude": [
+          {
+            "file": "**/api/lambda/**/*"
+          }
+        ]
+      }
+    },
+    "bundlerChain": [
+      null,
+      null,
+      null,
+      null
+    ],
+    "styledComponents": {
+      "topLevelImportPaths": [
+        "@edenx/runtime/styled"
+      ]
+    }
+  },
+  "plugins": [
+    {
+      "name": "@edenx/app-tools",
+      "registerHook": {
+        "beforeExecDev": {},
+        "beforeExecBuild": {}
+      },
+      "usePlugins": [
+        {
+          "name": "@modern-js/app-tools",
+          "post": [
+            "@modern-js/plugin-initialize",
+            "@modern-js/plugin-analyze",
+            "@modern-js/plugin-ssr",
+            "@modern-js/plugin-document",
+            "@modern-js/plugin-state",
+            "@modern-js/plugin-router",
+            "@modern-js/plugin-router-v5",
+            "@modern-js/plugin-polyfill"
+          ],
+          "registerHook": {
+            "modifyEntryExport": {},
+            "modifyEntryImports": {},
+            "modifyEntryRuntimePlugins": {},
+            "modifyEntryRenderFunction": {},
+            "modifyAsyncEntry": {},
+            "modifyFileSystemRoutes": {},
+            "modifyServerRoutes": {},
+            "modifyEntrypoints": {},
+            "checkEntryPoint": {},
+            "htmlPartials": {},
+            "beforeGenerateRoutes": {},
+            "addDefineTypes": {},
+            "collectServerPlugins": {},
+            "_internalServerPlugins": {},
+            "beforeDev": {},
+            "afterDev": {},
+            "beforeCreateCompiler": {},
+            "afterCreateCompiler": {},
+            "beforePrintInstructions": {},
+            "beforeBuild": {},
+            "afterBuild": {},
+            "beforeDeploy": {},
+            "deploy": {},
+            "afterDeploy": {},
+            "beforeRestart": {},
+            "registerDev": {},
+            "beforeDevTask": {},
+            "registerBuildPlatform": {},
+            "beforeBuildPlatform": {}
+          },
+          "usePlugins": [
+            {
+              "name": "@modern-js/plugin-initialize",
+              "post": [
+                "@modern-js/plugin-ssr",
+                "@modern-js/plugin-document",
+                "@modern-js/plugin-state",
+                "@modern-js/plugin-router",
+                "@modern-js/plugin-router-v5",
+                "@modern-js/plugin-polyfill"
+              ]
+            },
+            {
+              "name": "@modern-js/plugin-analyze"
+            },
+            {
+              "name": "@modern-js/server-build"
+            },
+            {
+              "name": "@modern-js/plugin-lint"
+            },
+            {
+              "name": "@modern-js/plugin-deploy"
+            }
+          ]
+        },
+        {
+          "name": "@edenx/plugin-deploy",
+          "post": [
+            "@modern-js/plugin-worker"
+          ]
+        },
+        {
+          "name": "@edenx/plugin-wrap-builder-plugins"
+        },
+        {
+          "name": "@modern-js/plugin-lint"
+        }
+      ]
+    }
+  ],
+  "builderPlugins": [],
+  "runtime": {
+    "router": true
+  },
+  "runtimeByEntries": {},
+  "security": {
+    "checkPolyfill": false
+  },
+  "performance": {
+    "buildCache": {
+      "cacheDigest": [
+        null
+      ]
+    }
+  },
+  "_raw": {
+    "source": {
+      "entries": {
+        "home": {
+          "entry": "./src/routes/home/page.tsx"
+        },
+        "clasi": {
+          "entry": "./src/routes/clasi/page.tsx"
+        }
+      },
+      "disableDefaultEntries": true
+    },
+    "runtime": {
+      "router": true
+    },
+    "plugins": [
+      "[Circular 0]"
+    ],
+    "tools": {}
+  },
+  "bff": {},
+  "testing": {},
+  "deploy": {}
+}
